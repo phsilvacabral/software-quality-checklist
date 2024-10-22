@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'inter-regular';
+    src: url('font/Inter_24pt-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inter-medium';
+    src: url('font/Inter_24pt-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inter-semibold';
+    src: url('font/Inter_24pt-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inter-bold';
+    src: url('font/Inter_24pt-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #28344B;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+    /* color: #28344B; */
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+
+}
+body::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 33%);
+    border: 1px solid rgba(255, 255, 255, 50%);
+}
+
+main{
+    width: 85%;
+    height: 92vh;
+    margin: 30px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#nav{
+    width: 100%;
+    height: 100px;
+    margin: 0 0 60px 0;
+    display: flex;
+    gap: 20px;
+}
+
+#conta{
+    width: 250px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 33%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0 0 0;
+}
+
+#conta-name{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'inter-medium';
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    padding: 0 20px 0 20px;
+}
+
+#sair{
+    color: white;
+    font-family: 'inter-medium';
+    font-size: 16px;
+    background-color: #3A8AD3;
+    border-radius: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#sair:hover{
+    opacity: 0.70;
+}
+
+#new-checklist{
+    width: 250px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 33%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#new-checklist:hover{
+    opacity: 0.80;
+}
+
+#mais-icon{
+    color: white;
+    font-family: 'inter-medium';
+    font-size: 48px;
+}
+
+#novo-checklist{
+    color: white;
+    font-family: 'inter-medium';
+    font-size: 16px;
+}
+
+h1{
+    color: white;
+    font-size: 40px;
+    font-family: "inter-bold";
+    margin: 0 0 15px 0;
+}
+
+#checklists{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow: auto;
+}
+
+.checklist{
+    width: 32%;
+    height: 190px;
+    background-color: rgba(255, 255, 255, 33%);
+    border: solid 1px rgba(255, 255, 255, 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.checklist:hover{
+    opacity: 0.80;
+}
+
+#name-description{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#name-description h2{
+    font-family: 'inter-bold';
+    font-size: 30px;
+}
+
+#name-description p{
+    font-family: 'inter-regular';
+    font-size: 14px;
+}
+
+#dt-modification{
+    color: white;
+    font-family: 'inter-medium';
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

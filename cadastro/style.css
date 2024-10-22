@@ -1,0 +1,149 @@
+
+@font-face {
+    font-family: 'inter-regular';
+    src: url('../font/Inter_24pt-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inter-medium';
+    src: url('../font/Inter_24pt-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inter-semibold';
+    src: url('../font/Inter_24pt-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inter-bold';
+    src: url('../font/Inter_24pt-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #28344B;
+    overflow: auto;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+    /* color: #28344B; */
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+
+}
+body::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 33%);
+    border: 1px solid rgba(255, 255, 255, 50%);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#cadastro-frame {
+    width: 350px;
+    height: 480px;
+    background-color: rgba(255, 255, 255, 33%);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+
+#cadastro-frame h1 {
+    font-family: 'inter-bold';
+    font-size: 35px;
+    color: white;
+    margin: 0 20px 40px 20px;
+}
+
+#cadastro-frame input {
+    width: 100%;
+    height: 40px;
+    border-radius: 2px;
+    border: solid 1px #bbb;
+    padding: 0 10px;
+    margin: 0px 0px 10px 0px;
+    font-family: 'inter-medium';
+    font-size: 14px;
+    outline: none;
+}
+
+#div-tipo-usuario {
+    height: 20px;
+    width: 100%;
+    display: flex;
+    margin: 0px 10px 10px 0px;
+    justify-content: space-between;
+}
+
+#div-tipo-usuario p {
+    align-items: center;
+    width: 130px;
+    font-family: 'inter-medium';
+    font-size: 14px;
+    color: white;
+}
+
+#div-tipo-usuario label {
+    display: flex;
+    font-family: 'inter-medium';
+    font-size: 14px;
+    color: white;
+    align-items: center;
+}
+
+#div-tipo-usuario .tipo{
+    margin: 0px;
+}
+
+#cadastro-button{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3A8AD3;
+    font-family: "inter-medium";
+    color: white;
+    font-size: 16px;
+}
+
+#cadastro-button:hover {
+    background-color: #2E7D9C;
+}
+
+#cadastro-message {
+    font-family: 'inter-regular';
+    font-size: 14px;
+    color: transparent;
+    margin: 0px;
+    width: 100%;
+    text-align: left;
+}
+
+#link-login {
+    font-family: 'inter-medium';
+    font-size: 14px;
+    color: white;
+    margin: 10px 0px 38px 0px;
+    width: 100%;
+    text-align: left;
+}
