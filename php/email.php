@@ -25,7 +25,7 @@
     
         if ($itemchecklist['Complexidade'] == 'Baixa') {
             $prazo_resolucao = '1 dia';
-        } elseif ($itemchecklist['Complexidade'] == 'Média') {
+        } elseif ($itemchecklist['Complexidade'] == 'Media') {
             $prazo_resolucao = '3 dias';
         } elseif ($itemchecklist['Complexidade'] == 'Alta') {
             $prazo_resolucao = '5 dias';
