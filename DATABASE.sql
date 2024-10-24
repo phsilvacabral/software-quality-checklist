@@ -31,7 +31,7 @@ CREATE TABLE `checklist` (
   PRIMARY KEY (`Cod_Checklist`),
   KEY `FK_Checklist_2` (`Criador`),
   CONSTRAINT `FK_Checklist_2` FOREIGN KEY (`Criador`) REFERENCES `usuario` (`Cod_Usuario`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +40,7 @@ CREATE TABLE `checklist` (
 
 LOCK TABLES `checklist` WRITE;
 /*!40000 ALTER TABLE `checklist` DISABLE KEYS */;
-INSERT INTO `checklist` VALUES (1,'Checklist','Checklist de auditoria da materia de qualidade de software',1,'2024-10-20 23:24:47');
+INSERT INTO `checklist` VALUES (1,'Checklist','Checklist de auditoria da materia de qualidade de software',1,'2024-10-24 11:12:22');
 /*!40000 ALTER TABLE `checklist` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -64,7 +64,7 @@ CREATE TABLE `itemchecklist` (
   KEY `FK_ItemChecklist_3` (`fk_Cod_Checklist`),
   CONSTRAINT `FK_ItemChecklist_2` FOREIGN KEY (`Responsavel`) REFERENCES `usuario` (`Cod_Usuario`) ON DELETE RESTRICT,
   CONSTRAINT `FK_ItemChecklist_3` FOREIGN KEY (`fk_Cod_Checklist`) REFERENCES `checklist` (`Cod_Checklist`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -73,7 +73,7 @@ CREATE TABLE `itemchecklist` (
 
 LOCK TABLES `itemchecklist` WRITE;
 /*!40000 ALTER TABLE `itemchecklist` DISABLE KEYS */;
-INSERT INTO `itemchecklist` VALUES (1,1,'Existe um plano de capacitação documentado para a equipe?','Alta',1,'NC','1'),(2,1,'A equipe recebe treinamento regular nas tecnologias utilizadas no projeto?','Baixa',2,'CC','1'),(3,1,'Há um processo para identificar as necessidades de capacitação da equipe?\n','Media',3,'CC','2'),(4,1,'A empresa fornece acesso a recursos de aprendizado, como cursos ou workshops?\n','Media',1,'NA','1'),(5,1,'Existe um registro das capacitações realizadas por cada colaborador?','Alta',1,'CC','1'),(6,1,'Há um processo para acompanhar o progresso dos colaboradores em relação ao plano de capacitação?','Baixa',3,'CC','1'),(7,1,'Os treinamentos são ministrados por profissionais qualificados?','Baixa',2,'CC','1'),(8,1,'Existe um orçamento específico para capacitação e desenvolvimento de pessoas?','Media',2,'CC','1'),(9,1,'A empresa promove a participação em conferências e eventos do setor?','Media',1,'CC','1'),(10,1,'Existe um programa de mentoria ou coaching para novos colaboradores?\n','Media',3,'CC','1'),(11,1,'A equipe tem acesso a materiais de leitura e atualização sobre novas práticas do setor?\n','Baixa',2,'CC','1'),(12,1,'Os treinamentos são avaliados quanto à sua eficácia?\n','Alta',1,'CC','1'),(13,1,'Há um processo de feedback após as capacitações para identificar melhorias?\n','Medai',2,'CC','1'),(14,1,'Os colaboradores têm liberdade para sugerir temas de capacitação?\n','Alta',3,'CC','1'),(15,1,'A capacitação considera as metas estratégicas da empresa?\n','Baixa',2,'CC','1'),(16,1,'Existe um controle sobre a carga horária dedicada à capacitação?\n','Baixa',1,'CC','1'),(17,1,'Os programas de capacitação estão alinhados com as competências necessárias para os projetos?\n','Media',2,'CC','1'),(18,1,'A empresa realiza ações para reter o conhecimento adquirido pela equipe?\n','Alta',3,'CC','1');
+INSERT INTO `itemchecklist` VALUES (1,1,'Existe um plano de capacitação documentado para a equipe?','Alta',1,'NC','4'),(2,1,'A equipe recebe treinamento regular nas tecnologias utilizadas no projeto?','Baixa',1,'NC','5'),(3,1,'Há um processo para identificar as necessidades de capacitação da equipe?','Media',1,'NC','6'),(4,1,'A empresa fornece acesso a recursos de aprendizado, como cursos ou workshops?','Media',1,'NC','7'),(5,1,'Existe um registro das capacitações realizadas por cada colaborador?','Alta',1,'NC','8'),(6,1,'Há um processo para acompanhar o progresso dos colaboradores em relação ao plano de capacitação?','Baixa',1,'NC','9'),(7,1,'Os treinamentos são ministrados por profissionais qualificados?','Baixa',1,'NC','10'),(8,1,'Existe um orçamento específico para capacitação e desenvolvimento de pessoas?','Media',1,'NC','11'),(9,1,'A empresa promove a participação em conferências e eventos do setor?','Media',1,'NC','13'),(10,1,'Existe um programa de mentoria ou coaching para novos colaboradores?','Media',1,'CC','1'),(11,1,'A equipe tem acesso a materiais de leitura e atualização sobre novas práticas do setor?','Baixa',2,'CC','1'),(12,1,'Os treinamentos são avaliados quanto à sua eficácia?','Alta',1,'CC','1'),(13,1,'Há um processo de feedback após as capacitações para identificar melhorias?','Alta',2,'CC','1'),(14,1,'Os colaboradores têm liberdade para sugerir temas de capacitação?','Alta',3,'CC','1'),(15,1,'A capacitação considera as metas estratégicas da empresa?','Baixa',2,'CC','1'),(16,1,'Existe um controle sobre a carga horária dedicada à capacitação?','Baixa',1,'CC','1'),(17,1,'Os programas de capacitação estão alinhados com as competências necessárias para os projetos?','Media',2,'NC','4');
 /*!40000 ALTER TABLE `itemchecklist` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -101,7 +101,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'Pedro','phsilvacabral@gmail.com','123','1'),(2,'João','joao@gmail.com','123','1'),(3,'daniel','daniel@gmail.com','123','1'),(4,'pedro','ph@gmail.com','123','2'),(5,'Pedro','phsilvacabrall@gmail.com','123','2'),(6,'Pedro','crianecabral.2011@gmail.com','123','1'),(7,'pedro','pedro@gmail.com','123','2');
+INSERT INTO `usuario` VALUES (1,'Pedro','phsilvacabral@gmail.com','123','1'),(2,'João','joao@gmail.com','123','1'),(3,'Daniel','daniel@gmail.com','123','1'),(4,'PH','ph@gmail.com','123','2');
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -114,4 +114,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-10-21 22:40:18
+-- Dump completed on 2024-10-24 11:14:15
