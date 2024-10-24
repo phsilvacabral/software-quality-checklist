@@ -29,7 +29,7 @@
     <main>
         <div id="nav">
             <div id="conta">
-                <p id="conta-name"><?php echo $nome; ?></p>
+                <p id="conta-name" data-id-logado="<?php echo $_SESSION['Cod_Usuario']; ?>"><?php echo $nome; ?></p>
                 <div id="sair">Sair</div>
             </div>
 
@@ -104,9 +104,25 @@
                 });
             </script>
 
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="script.js"></script>
+
         </div>
     </main>
 
+
+    <div id="popup-new-checklist" class="popup-overlay" style="display: none;">
+        <div class="popup-content">
+            <h2>Criar novo checklist</h2>
+            <input type="text" id="titulo-check" placeholder="Título do checklist">
+            <input type="text" name="descricao-check" id="descricao-check" placeholder="Descrição do checklist">
+            <div>
+                <input type="button" value="Cancelar" id="botao-cancelar-popup">
+                <input type="button" value="Criar checklist" id="botao-criar-popup">
+            </div>
+        </div>
+    </div>
 </body>
+
 
 </html>
