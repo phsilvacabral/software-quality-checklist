@@ -210,14 +210,38 @@ h1{
     border-radius: 5px;
     text-align: center;
 }
+.popup-content h2{
+    font-family: 'inter-bold';
+    font-size: 24px;
+    margin: 0 0 20px 0;
+}
+.popup-content div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
 
 .popup-content input[type="text"] {
     margin-bottom: 10px;
     width: 100%;
     padding: 8px;
+    color: #28344B;
+    font-family: 'inter-medium';
 }
 
 .popup-content input[type="button"] {
     padding: 8px 16px;
-    margin: 5px;
+    width: 100%;
+    font-family: 'inter-medium';
+    font-size: 16px;
+    height: 35px;
+    border: none;
+}
+.popup-content input[type="button"]:hover{
+    opacity: 0.80;
+}
+#botao-criar-popup{
+    background-color: #3A8AD3;
+    color: white;
 }
