@@ -106,7 +106,7 @@
     }
 
     function main($conn) {
-        $ID = $_POST['id'];
+        $ID = $_POST['codChecklist'];
     
         $sqlC = "SELECT Titulo FROM checklist WHERE Cod_Checklist = '$ID'";
         $resultC = mysqli_query($conn, $sqlC);
